@@ -13,7 +13,6 @@ export default async function getResult(userInput) {
     const getKeyword = await findKeyword(userInput);
 
 
-    console.log('getKeyword =', getKeyword);
     if (getKeyword.length !== 0) {
       console.log('getKeyword =', getKeyword);
       return getKeyword;

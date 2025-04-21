@@ -10,8 +10,6 @@ export  default async function findKeyword(userInput) {
 
     //['電話', '客服', '聯絡', '聯繫']
     const match = faq.keywords.find((kw) => {
-      console.log('input =', input);
-      console.log('kw =', kw);
       return input.includes(kw)
     });
     if (match) {
